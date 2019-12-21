@@ -8,11 +8,14 @@
                 <th>Body</th>
                 <th>Skills</th>
             </tr>
-            <?php foreach($questions as $question) : ?>
+            <?php foreach($questions as $question) :
+            ?>
+
                 <tr>
-                    <td><?php echo $questions['title']; ?></td>
-                    <td><?php echo $questions['body']; ?></td>
-                    <td><?php echo $questions['skills'];?></td>
+                    <td><?php echo $question['title']; ?></td>
+                    <td><?php echo $question['body']; ?></td>
+                    <td><?php echo $question['skills'];?></td>
+                    <td><?php echo $question['ownerid'];?></td>
                     <td> <form action="../.." method="post">
                             <input type="hidden" name="action"
                                    value="delete_question">

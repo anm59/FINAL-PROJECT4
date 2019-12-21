@@ -1,3 +1,9 @@
+<!--
+//REMOVE THIS
+//error_reporting(E_ALL);
+//ini_set('display_errors','On');
+// ^^^^^^
+-->
 <?php
 require('view/database.php');
 require('view/account_db.php');
